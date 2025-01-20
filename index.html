@@ -1,0 +1,299 @@
+<!-- Developed by https://github.com/mabelpertot -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackSun Roller</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/lgbs.JPG" type="image/jpg">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Line awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="brand">BlackSun Roller<h3 class="brand"></h3></a>  
+            <ul class="nav-links">
+                <li class="active"><a href="#hero">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#work">Trabajos</a></li>
+                <li><a href="#blog">Tienda</a></li>
+                <li><a href="#contact">Contacto</a></li>
+<!-- Botón de WhatsApp -->
+                <li>
+                    <!-- <a href="https://wa.me/5491170260800?text=Hola!%20Black%20Sun!!%20Quisiera%20tener%20más%20info.%20Conocer%20sus%20productos%20y%20servicios."  -->
+                    <a href="https://api.whatsapp.com/send/?phone=5491170260800&text=Hola%21+Black+Sun%21%21+Quisiera+tener+m%C3%A1s+info.+Conocer+sus+productos+y+servicios.&type=phone_number&app_absent=0"
+                        class="whatsapp-button">
+                        <img src="./assets/images/charla.png" 
+                            alt="WhatsApp">
+                    </a>
+                </li>                
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- //Nvbar -->
+    
+    <!-- Hero -->
+    <div id="hero">
+        <div class="container">
+            <h1 class="heading-xl"><span id="hero-titles"></span></h1>
+            <a href="#services" class="scroll-to-down"><i class="las la-arrow-down"></i></a>
+            <br><button class="cotiza-btn" onclick="scrollToForm()">"¡HAZ CLIC Y COTIZA EN MINUTOS!"</button>
+        </div>       
+    </div>
+    <!-- //Hero -->
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-intro" data-aos="fade-up">
+                <h3 class="heading-2"><a href="#">LO QUE HACEMOS...</a></h3>
+                <h4><li>"¡DISEÑO A TU MEDIDA, VIVE LA EXPERIENCIA COMPLETA!."</li></h4>
+            </div>
+            <div class="grid three-col-grid">
+                <div class="service" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="las la-user-friends"></i></div>
+                    <h3 class="heading-3">Asesoría personalizada</h3>
+                    <p>Te ayudamos a elegir la cortina que mejor se adapte a tus necesidades y estilo. Nuestro servicio incluye una evaluación detallada del espacio, opciones de diseño y recomendaciones técnicas para lograr el resultado perfecto.</p><br>
+                    <p>"Te acompañamos en cada paso para que elijas la mejor opción."</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon"><i class="las la-pencil-ruler "></i></div>
+                    <h3 class="heading-3">Fabricación a medida</h3>
+                    <p>Fabricamos cortinas a la medida exacta de tus ventanas, garantizando un ajuste impecable y materiales de alta calidad que se adaptan a tus necesidades específicas.</p><br>
+                    <p>"Cada ventana es única, y nuestras cortinas también. Personaliza cada detalle con nosotros."</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="900">
+                    <div class="icon"><i class="las la-tools"></i></div>
+                    <h3 class="heading-3">Instalación profesional</h3>
+                    <p>Nos encargamos de transformar tus espacios con cortinas perfectamente instaladas. Nuestro equipo profesional asegura un ajuste preciso y estético para cualquier ventana, garantizando funcionalidad y diseño.</p><br>
+                    <p>"Deja en nuestras manos la instalación para que disfrutes de un ambiente cómodo y moderno desde el primer día."</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="las la-wrench"></i></div>
+                    <h3 class="heading-3">Mantenimiento y reparación</h3>
+                    <p>Prolonga la vida útil de tus cortinas con nuestro servicio de mantenimiento y reparación. Nos encargamos de limpieza profunda, ajustes técnicos y reemplazo de piezas si es necesario.</p><br>
+                    <p>"Tu inversión merece el mejor cuidado. Mantén tus cortinas como nuevas con nuestro servicio especializado."</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon"><i class="las la-cogs"></i></div>
+                    <h3 class="heading-3">Automatización</h3>
+                    <p>Moderniza tus espacios con sistemas automatizados para cortinas. Controla la luz, la privacidad y la temperatura con solo presionar un botón o desde tu smartphone.</p><br>
+                    <p>"La tecnología y el diseño se unen para simplificar tu vida y darle un toque moderno a tus espacios."</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="900">
+                    <div class="icon"><i class="las la-briefcase"></i></div>
+                    <h3 class="heading-3">Proyectos Empresariales</h3>
+                    <p>Ofrecemos soluciones de cortinas adaptadas a las necesidades de oficinas, hoteles y comercios. Diseñamos y ejecutamos proyectos que combinan funcionalidad y estética profesional.</p><br>
+                    <p>"Tu espacio profesional merece destacar. Creamos ambientes que inspiran confianza y productividad."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- //Services -->
+
+    <!-- Work -->
+    <section id="work">
+        <div class="container">
+            <div class="section-intro" data-aos="fade-up">
+                <h3 class="heading-2"><a href="#">PROYECTOS CONSUMADOS...</a></h3>
+                <h4><li>"¡INSPIRÁTE Y HAZ REALIDAD EL TUYO"</li></h4>
+            </div>
+            <a href="#" class="grid two-col-grid">
+                <div class="project" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="./assets/images/Collage de Fotos Roller.png" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="heading-3">CORTINAS ROLLER</h2>
+                                <li>MINIMALISTA</li>
+                            <p>Combinan diseño contemporáneo con soluciones prácticas. Están disponibles en diferentes tipos de tejidos, como blackout, traslúcido, screen.</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="./assets/images/Collage de Fotos Bandas Verticales.png" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="heading-3">BANDAS VERTICALES</h2>
+                            <li>VERSATILIDAD</li>
+                            <p>Son ideales para cubrir grandes superficies de vidrio, como ventanales o puertas corredizas. Están fabricadas en materiales como PVC, tela o tejidos técnicos, y giran para ajustar la luz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" data-aos="zoom-in" data-aos-delay="900">
+                    <img src="./assets/images/Collage de Fotos Eclipse.png" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="heading-3">CORTINAS ECLIPSE</h2>
+                            <li>SOFISTICADA</li>
+                            <p>Este estilo combina lo mejor de dos mundos: un sistema que alterna franjas traslúcidas y opacas, permitiendo controlar la entrada de luz con un diseño dinámico y moderno.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" data-aos="zoom-in" data-aos-delay="1100">
+                    <img src="./assets/images/Collage de Fotos Convencionales.png" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="heading-3">CONVENCIONALES</h2>
+                            <li>CLÁSICAS</li>
+                            <p>Tradición con toque renovado. Utilizan rieles o barras para colgar paneles de tela. Están disponibles en una amplia variedad de tejidos, colores y estilos.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- //Work -->
+
+    <!-- Blog -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-intro" data-aos="fade-up">
+                <h1 class="heading-2"><a href="#">"DECORACIÓN CON ESTILO"</a></h1>
+                <li>"¡CUIDANDO HASTA EL ÚLTIMO DETALLE"</li>
+            </div>
+            <div class="grid three-col-grid">
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./assets/images/Convencionales.png" alt="Convencionales">
+                    <p><a href="#">Tradicional, estilos y clásicos. Diseñadas para ofrecer flexibilidad y texturas.</a></p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./assets/images/Bandas Verticales.png" alt="Bandas Verticales">
+                    <p><a href="#">Dinámica y versátil. Diseñadas para cubrir grandes superficies con estilo y precisión.</a></p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="600">
+                    <img src="./assets/images/Eclipse.png" alt="Eclipse">
+                    <p><a href="#">Innovación, sofisticación. Diseñadas para crear espacios únicos con distinción.</a><p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./assets/images/Sun Screen.png" alt="Sun Screen">
+                    <p><a href="#">Contemporáneo, cálido y discreto. Diseñadas para equilibrar luz y privacidad.</a></p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <img src="./assets/images/Roller Black Out.png" alt="Black Out">
+                    <p><a href="#">Moderno, funcional y elegante. Diseñadas para bloquear la luz al 100%.</a></p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="900">
+                    <img src="./assets/images/Traslúcida.png" alt="Traslúcidas">
+                    <p><a href="#">Elegante y minimalista. Diseñadas para suavizar la luz sin bloquearla por completo.</a></p>
+                </div>
+            </div><br>
+            <div class="grid three-col-grid">
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <video controls>
+                        <source src="./assets/video/Sistema Manual.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <p><a href="#">"La versatilidad de lo clásico, reinventada con materiales de primera calidad."</a></p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <video controls>
+                        <source src="./assets/video/Sistema Automatizado.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <p><a href="#">"La versatilidad de lo clásico, reinventada con materiales de primera calidad."</a></p>
+                </div>
+                <div class="blog-post" data-aos="flip-left" data-aos-delay="300">
+                    <video controls>
+                        <source src="./assets/video/Convencional Automatizada.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <p><a href="#">"La versatilidad de lo clásico, reinventada con materiales de primera calidad."</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Blog -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <div id="formulario" class="container">
+            <div class="grid">
+                <div class="contact-info" data-aos="fade-up">
+                    <div class="section-intro">
+                        <h1 class="heading-2">Contactános</h1>
+                        <li><a href="#">"¡ANIMATE.!"</a></li>
+                    </div>
+                    <div class="contact-widget">
+                        <ul>
+                            <li><a href="#"><i class="las la-envelope"></i></a>blacksun@gmail.com</li>
+                            <li><a href="#"><i class="lab la-facebook"></i></a>BlackSun</li>
+                            <li><a href="#"><i class="lab la-instagram"></i></a>BlackSun_roller</li>
+                            <li><a href="#"><i class="las la-phone"></i></a>1135613464</li>
+                            <li><a href="#"><i class="las la-map-marker-alt"></i></a>Tristán Suárez, Ezeiza.</li><br>
+                            <li><a href="#"><i class="las la-clock"></i></a>Horario de Atencion</li>
+                            <span>Lunes a Viernes: 9:00 - 19:00</span></ul>
+                            <span>Sábados: 9:00 - 15:00 </span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                    <div class="section-intro">
+                        <h1 class="heading-2">Solicita una cotización personalizada.</h1>
+                        <li><a href="#">"¡TRANSFORMA TU ESPACIO HOY!"</a></li>
+                    </div>
+                    <form action="mailto:blacksunroller@gmail.com" method="post" enctype="text/plain">
+                    <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Escribe tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="telefono" class="form-input" placeholder="Ecribe tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Ecribe tu mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Ecribe tu consulta ..." rows="5" class="form-input" placeholder="Ecribe tu consulta ..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn" type="submit">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Contact -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><a href="#">&copy; copyrigth 2025. BlackSun Roller. Todos los derechos reservados.</a></p>
+            <p><a>Desarrollo proyexs</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="las la-envelope"></i></a>
+                <a href="#"><i class="lab la-facebook"></i></a>
+                <a href="#"><i class="lab la-instagram"></i></a>
+                <a href="#"><i class="las la-phone"></i></a>
+                <a href="#"><i class="las la-map-marker-alt"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+    
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- AOS -->
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
